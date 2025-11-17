@@ -141,6 +141,120 @@ $result = mysqli_query($conn, $sql);
 
 <img width="1920" height="1008" alt="Image" src="https://github.com/user-attachments/assets/48e75a00-08e2-4c3d-a6d9-756093189cfb" />
 
+## Langkah 5
+  - Membuat halaman tambah data
+  - file : tambah.php
+
+  Perubahan :
+  - Menambah data baru
+  - Menghilangkan echo di koneksi.php
+  - Memperbaiki proses upload gambar
+  - Cek error update file
+  - Menambahkan `exit()` setelah redirect
+
+```
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+include_once 'koneksi.php';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+    $nama = $_POST['nama'];
+    $kategori = $_POST['kategori'];
+    $harga_jual = $_POST['harga_jual'];
+    $harga_beli = $_POST['harga_beli'];
+    $stok = $_POST['stok'];
+
+    $gambar = "";
+
+    // pastikan folder gambar ada
+    $folder = __DIR__ . "/gambar/";
+    if (!is_dir($folder)) {
+        mkdir($folder, 0777, true);
+    }
+
+    if (!empty($_FILES['file_gambar']['name'])) {
+        $filename = str_replace(' ', '_', $_FILES['file_gambar']['name']);
+        $destination = $folder . $filename;
+
+        if (move_uploaded_file($_FILES['file_gambar']['tmp_name'], $destination)) {
+            $gambar = $filename;  // hanya nama file
+        }
+    }
+
+    $sql = "INSERT INTO data_barang 
+            (nama, kategori, harga_jual, harga_beli, stok, gambar)
+            VALUES 
+            ('$nama', '$kategori', '$harga_jual', '$harga_beli', '$stok', '$gambar')";
+
+    mysqli_query($conn, $sql);
+
+    header("Location: index.php");
+    exit;
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="style.css" rel="stylesheet" type="text/css" />
+<title>Tambah Barang</title>
+</head>
+<body>
+<div class="container">
+<h1>Tambah Barang</h1>
+<div class="main">
+
+<form action="tambah.php" method="post" enctype="multipart/form-data">
+
+    <div class="input">
+        <label>Nama Barang</label>
+        <input type="text" name="nama" required>
+    </div>
+
+    <div class="input">
+        <label>Kategori</label>
+        <select name="kategori">
+            <option value="Komputer">Komputer</option>
+            <option value="Elektronik">Elektronik</option>
+            <option value="Hand Phone">Hand Phone</option>
+        </select>
+    </div>
+
+    <div class="input">
+        <label>Harga Jual</label>
+        <input type="number" name="harga_jual" required>
+    </div>
+
+    <div class="input">
+        <label>Harga Beli</label>
+        <input type="number" name="harga_beli" required>
+    </div>
+
+    <div class="input">
+        <label>Stok</label>
+        <input type="number" name="stok" required>
+    </div>
+
+    <div class="input">
+        <label>File Gambar</label>
+        <input type="file" name="file_gambar">
+    </div>
+
+    <div class="submit">
+        <input type="submit" value="Simpan">
+    </div>
+
+</form>
+
+</div>
+</div>
+</body>
+</html>
+```
+
 <img width="1920" height="1008" alt="Image" src="https://github.com/user-attachments/assets/4553dbca-8de9-4e84-8cbf-3fdacd799fe0" />
 
 <img width="1920" height="1008" alt="Image" src="https://github.com/user-attachments/assets/1a185f4e-1e92-49dc-a2db-39930bdfa55c" />
