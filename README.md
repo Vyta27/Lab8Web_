@@ -257,6 +257,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <img width="1920" height="1008" alt="Image" src="https://github.com/user-attachments/assets/7bb497fe-e498-451e-b11b-5b6f3c3b2e74" />
 
+<img width="1920" height="1008" alt="Image" src="https://github.com/user-attachments/assets/cdc9f9b2-4ef9-4e44-98e6-a7b8f8ad7217" />
+
 ## Langkah 6
   - Membuat halaman ubah data : Mengubah isi data barang
   - file : ubah.php
@@ -386,7 +388,6 @@ function is_select($var, $val) {
 ```
 <img width="1920" height="1008" alt="Image" src="https://github.com/user-attachments/assets/1a185f4e-1e92-49dc-a2db-39930bdfa55c" />
 
-<img width="1920" height="1008" alt="Image" src="https://github.com/user-attachments/assets/cdc9f9b2-4ef9-4e44-98e6-a7b8f8ad7217" />
 
 ## Langkah 7
   - Membuat halaman hapus data
