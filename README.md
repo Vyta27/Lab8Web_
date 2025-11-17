@@ -1,1 +1,33 @@
+Nama    : Navyta Budi Yulia
+
+NIM     : 312410184
+
+Kelas   : TI.24.A2
+
 # Lab8Web_
+
+<img width="1920" height="1008" alt="Image" src="https://github.com/user-attachments/assets/cfc16de2-6d55-4b5b-a3c2-bb7bf0f48a8e" />
+
+<img width="1920" height="1008" alt="Image" src="https://github.com/user-attachments/assets/0a0664be-5e91-4a01-acbb-b9285afc2a27" />
+
+<img width="1920" height="1008" alt="Image" src="https://github.com/user-attachments/assets/55ecf77c-343e-4bfa-822d-8612e7a6e12b" />
+
+<img width="1920" height="1008" alt="Image" src="https://github.com/user-attachments/assets/ed44f3d0-18c0-488f-a841-9215134e2ac6" />
+
+<img width="1920" height="1008" alt="Image" src="https://github.com/user-attachments/assets/c7198311-6c80-4b9a-9da8-786eab36c506" />
+
+<img width="1920" height="1008" alt="Image" src="https://github.com/user-attachments/assets/4843122b-de74-4d96-9441-eb382100875f" />
+
+<img width="1920" height="1008" alt="Image" src="https://github.com/user-attachments/assets/4dbaa24c-d998-4732-9e01-32ca2cc99636" />
+
+<img width="1920" height="1008" alt="Image" src="https://github.com/user-attachments/assets/48e75a00-08e2-4c3d-a6d9-756093189cfb" />
+
+<img width="1920" height="1008" alt="Image" src="https://github.com/user-attachments/assets/4553dbca-8de9-4e84-8cbf-3fdacd799fe0" />
+
+<img width="1920" height="1008" alt="Image" src="https://github.com/user-attachments/assets/1a185f4e-1e92-49dc-a2db-39930bdfa55c" />
+
+<img width="1920" height="1008" alt="Image" src="https://github.com/user-attachments/assets/7bb497fe-e498-451e-b11b-5b6f3c3b2e74" />
+
+<img width="1920" height="1008" alt="Image" src="https://github.com/user-attachments/assets/cdc9f9b2-4ef9-4e44-98e6-a7b8f8ad7217" />
+
+<img width="1920" height="1008" alt="Image" src="https://github.com/user-attachments/assets/a8635ede-1a22-4ff4-8780-930cd139cc71" />
