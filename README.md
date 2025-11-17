@@ -7,7 +7,7 @@ Kelas   : TI.24.A2
 # Lab8Web_
 
 ## Langkah 1 
-  - Membuat Database `latihan1`
+  - Membuat Database `latihan1` : Menyediakan ruang penyimpanan untuk aplikasi CRUD.
   - Membuat Tabel `data_barang` : Tabel ini untuk menyimpan seluruh informasi barang.
 
 
@@ -42,6 +42,8 @@ INSERT INTO data_barang (kategori, nama, gambar, harga_beli, harga_jual, stok) V
 
 <img width="1920" height="1008" alt="Image" src="https://github.com/user-attachments/assets/ed44f3d0-18c0-488f-a841-9215134e2ac6" />
 
+<img width="1920" height="1008" alt="Image" src="https://github.com/user-attachments/assets/c7198311-6c80-4b9a-9da8-786eab36c506" />
+
 
 ## Langkah 3 
     - Mmmbuat folder `lab8_php_database` di htdocs
@@ -67,12 +69,17 @@ die();
 ?>
 ```
 
-<img width="1920" height="1008" alt="Image" src="https://github.com/user-attachments/assets/c7198311-6c80-4b9a-9da8-786eab36c506" />
-
 <img width="1920" height="1008" alt="Image" src="https://github.com/user-attachments/assets/4843122b-de74-4d96-9441-eb382100875f" />
 
 <img width="1920" height="1008" alt="Image" src="https://github.com/user-attachments/assets/4dbaa24c-d998-4732-9e01-32ca2cc99636" />
 
+## Langkah 4
+  - Membuat halaman index : menampilkan tabel barang dan menjadi halaman utama CRUD
+  Perubahan :
+  - menampilkan seluruh data dari tabel
+  - menambahkan tombol tambah barang
+  - mengatur ulang kolom aksi : ubah | hapus
+    
 <img width="1920" height="1008" alt="Image" src="https://github.com/user-attachments/assets/48e75a00-08e2-4c3d-a6d9-756093189cfb" />
 
 <img width="1920" height="1008" alt="Image" src="https://github.com/user-attachments/assets/4553dbca-8de9-4e84-8cbf-3fdacd799fe0" />
