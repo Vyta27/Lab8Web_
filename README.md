@@ -6,6 +6,23 @@ Kelas   : TI.24.A2
 
 # Lab8Web_
 
+## Langkah 1 
+  - Membuat Database `latihan1`
+  - Membuat Tabel `data_barang`
+
+```
+CREATE TABLE data_barang (
+  id_barang int(10) auto_increment PRIMARY KEY,
+  kategori varchar(30),
+  nama varchar(30),
+  gambar varchar(100),
+  harga_beli decimal(10,0),
+  harga_jual decimal(10,0),
+  stok int(4)
+);
+```
+
+
 <img width="1920" height="1008" alt="Image" src="https://github.com/user-attachments/assets/cfc16de2-6d55-4b5b-a3c2-bb7bf0f48a8e" />
 
 <img width="1920" height="1008" alt="Image" src="https://github.com/user-attachments/assets/0a0664be-5e91-4a01-acbb-b9285afc2a27" />
