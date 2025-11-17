@@ -10,6 +10,8 @@ Kelas   : TI.24.A2
   - Membuat Database `latihan1`
   - Membuat Tabel `data_barang` : Tabel ini untuk menyimpan seluruh informasi barang.
 
+
+
 ```
 CREATE TABLE data_barang (
   id_barang int(10) auto_increment PRIMARY KEY,
@@ -21,7 +23,6 @@ CREATE TABLE data_barang (
   stok int(4)
 );
 ```
-
 
 <img width="1920" height="1008" alt="Image" src="https://github.com/user-attachments/assets/cfc16de2-6d55-4b5b-a3c2-bb7bf0f48a8e" />
 
@@ -45,6 +46,7 @@ INSERT INTO data_barang (kategori, nama, gambar, harga_beli, harga_jual, stok) V
 ## Langkah 3 
     - Mmmbuat folder `lab8_php_database` di htdocs
     - Membuat file `koneksi.php` : menghubungkan PHP dengan databse.
+
 
 ```
 <?php
