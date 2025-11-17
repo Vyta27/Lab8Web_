@@ -74,12 +74,71 @@ die();
 <img width="1920" height="1008" alt="Image" src="https://github.com/user-attachments/assets/4dbaa24c-d998-4732-9e01-32ca2cc99636" />
 
 ## Langkah 4
-  - Membuat halaman index : menampilkan tabel barang dan menjadi halaman utama CRUD
+  - Membuat halaman index : menampilkan tabel barang dan menjadi halaman utama CRUD.
+    
   Perubahan :
   - menampilkan seluruh data dari tabel
   - menambahkan tombol tambah barang
   - mengatur ulang kolom aksi : ubah | hapus
-    
+
+```
+<?php
+include("koneksi.php");
+$sql = 'SELECT * FROM data_barang';
+$result = mysqli_query($conn, $sql);
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Data Barang</title>
+</head>
+<body>
+<div class="container">
+    <h1>Data Barang</h1>
+
+    <a href="tambah.php">Tambah Barang</a>
+    <br><br>
+
+    <div class="main">
+        <table>
+            <tr>
+                <th>Gambar</th>
+                <th>Nama Barang</th>
+                <th>Katagori</th>
+                <th>Harga Jual</th>
+                <th>Harga Beli</th>
+                <th>Stok</th>
+                <th>Aksi</th>
+            </tr>
+
+            <?php if($result): ?>
+            <?php while($row = mysqli_fetch_array($result)): ?>
+            <tr>
+                <td><img src="<?= $row['gambar']; ?>" width="80"></td>
+                <td><?= $row['nama'];?></td>
+                <td><?= $row['kategori'];?></td>
+                <td><?= $row['harga_jual'];?></td>
+                <td><?= $row['harga_beli'];?></td>
+                <td><?= $row['stok'];?></td>
+                <td>
+                    <a href="ubah.php?id=<?= $row['id_barang']; ?>">Ubah</a> |
+                    <a href="hapus.php?id=<?= $row['id_barang']; ?>">Hapus</a>
+                </td>
+            </tr>
+            <?php endwhile; else: ?>
+            <tr>
+                <td colspan="7">Belum ada data</td>
+            </tr>
+            <?php endif; ?>
+        </table>
+    </div>
+</div>
+</body>
+</html>
+```
+
 <img width="1920" height="1008" alt="Image" src="https://github.com/user-attachments/assets/48e75a00-08e2-4c3d-a6d9-756093189cfb" />
 
 <img width="1920" height="1008" alt="Image" src="https://github.com/user-attachments/assets/4553dbca-8de9-4e84-8cbf-3fdacd799fe0" />
