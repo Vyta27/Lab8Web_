@@ -7,7 +7,7 @@ Kelas   : TI.24.A2
 # Lab8Web_
 
 ## Langkah 1 
-  - Membuat Database `latihan1` : Menyediakan ruang penyimpanan untuk aplikasi CRUD.
+  - Membuat Database `latihan1` : Menyediakan ruang penyimpanan untuk aplikasi CRUD. 
   - Membuat Tabel `data_barang` : Tabel ini untuk menyimpan seluruh informasi barang.
 
 
